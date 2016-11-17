@@ -1,0 +1,228 @@
+@charset "utf-8";
+body{
+	background: #fff;
+}
+#header{
+	min-width: 1000px;
+	background: url(../img/sub_login/bg_body.png) repeat-x;
+}
+.header-content{
+	height: 65px;
+	width: 1000px;
+	margin: 0 auto;
+	position: relative;
+}
+.header-content h1 a{
+	position: absolute;
+	width: 106px;
+	height: 86px;
+	background: url(../img/sub_login/logo.png) no-repeat;
+	top: 0;
+	left: 0;
+}
+
+
+/*登录窗口*/
+.login{
+	width: 940px;
+	padding: 60px 0;
+	margin: 0 auto;
+}
+.login-l{
+	width: 480px;
+	float: left;
+	margin-left: -20px;
+	margin-right: 40px;
+	margin-top: 20px;
+}
+.login-l img{
+	width: 520px;
+	height: 348px;
+}
+
+.login-r{
+	float: right;
+	width: 377px;
+	height: 450px;
+	
+}
+.login-form{
+	padding: 0 38px;
+}
+.loginTable{
+	text-align: left;
+}
+table{
+	border-collapse: collapse;
+	border-spacing:0 ;
+}
+.loginTable tbody{
+	vertical-align: middle;
+}
+.loginTable .item{
+	position: relative;
+}
+#login .label{
+	display: block;
+	font-size: 20px;
+	color: #434343;
+	line-height: 24px;
+	padding: 10px 0 4px;
+}
+.login-inner{
+	position: relative;
+	height: 34px;
+}
+.mt10{
+	margin-top: 10px;
+}
+.loginTable .textbox{
+	width: 268px;
+	padding: 0 5px;
+	height: 34px;
+	line-height: 34px;
+	border-radius: 2px;
+	background: none;
+	border: 1px solid #ccc;
+	font-size: 14px;
+}
+#login .tip{
+	position: absolute;
+	background: #fef0e1;
+	border: 1px solid #fe9435;
+	min-width: 60px;
+	border-radius: 3px;
+	color: #7b755f;
+	padding: 4px 10px;
+	display: none;
+	right: 5px;
+	top: -37px;
+}
+.icon{
+	vertical-align: middle;
+	margin-right:3px ;
+	display: inline-block;
+	background: url(../img/sub_login/sprite.png) no-repeat;
+}
+.icon-minus{
+	background-position: -1px -178px;
+	width: 14px;
+	height: 14px;
+}
+#login .tip .arrow{
+	position: absolute;
+	right: 30px;
+	top: 15px;
+	color: #fef0e1;
+	font-size: 14px;
+}
+.tip .arrow em{
+	position: absolute;
+	color: #fe9435;
+	top: 2px;
+}
+.tip .arrow cite{
+	position: absolute;
+}
+.pink{
+	color: #fa4776;
+	font-size: 14px;
+}
+a.fr{
+	float: right;
+	font-size: 12px;
+}
+.checkbox{
+	vertical-align: middle;
+	margin-right: 4px;
+}
+.hide{
+	display: none;
+}
+.loginTable .item{
+	position: relative;
+}
+.item-td{
+	padding: 15px 0 8px 0;
+	color: #787878;
+}
+.btn-b{
+	width: 282px;
+	height: 46px;
+	background: #fe4172;
+	display: block;
+	line-height: 46px;
+	font-size: 18px;
+	color: #fff;
+	font-weight: normal;
+	text-shadow: none;
+	border-radius: 3px;
+	text-align: center;
+}
+
+
+.contentArea{
+	margin-top: 12px;
+	font-size: 14px;
+	color: #787878;
+}
+.center{
+	text-align: center;
+}
+.contentArea a{
+	display: inline-block;
+	margin-right: 5px;
+	color: #4d4d4d;
+}
+.thirdpart-icon .icon{
+	width: 32px;
+	height: 40px;
+	background: url(../img/sub_login/icon_thirdparty.png) no-repeat;
+	margin-top: 5px;
+}
+.thirdpart-icon .icon-sina{
+	background-position: -93px 0;
+}
+.thirdpart-icon .icon-qq{
+	background-position: -10px 0;
+}
+.thirdpart-icon .icon-renren{
+	background-position: -177px 0;
+}
+
+.guide-reg{
+	background: #f6f6f6;
+	height: 60px;
+	line-height: 60px;
+	font-size: 14px;
+	text-align: center;
+	color: #5a5a5a;
+	margin-top: 35px;
+}
+
+
+/*登录hover样式*/
+#btn-login:hover{
+	opacity: .8;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="css/commer.css"/>
+		<link rel="stylesheet" type="text/css" href="css/phone_login.css"/>
+		<link rel="shortcut icon" type="text/css" href="favicon.ico"/>
+		<title>美图会员账号中心</title>
+		<script src="js/jquery-1.11.3.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.cookie.js" type="text/javascript" charset="utf-8"></script>
+		<script src="itemJS/phone_login.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div id="header" class="header adapt-header">
+			<div class="header-content clear">
+				<h1 class="logo">
+					<a class="logo-id" title="美图账号" href=""></a>
+					<a class="logo-meitu" title="美图" href="index.html"></a>
+				</h1>
+				<div class="topRight">
+					<a href="sub_login.html">登录</a>
+					<span class="line">|</span>
+					<a href="">注册</a>
+				</div>
+			</div>
+		</div>
+		<div id="wrap">
+			<div id="container" class="clear adapt-header">
+				<div class="tab clear" id="tab">
+					<div class="tab-bg">
+						<span class="current"></span>
+						<span class="tab-li">手机注册</span>
+					</div>
+				</div>
+				<div id="mainContent">
+					<form class="form clear reg-form" id="reg-form">
+						<ul id="reg-ul">
+							<li class="item">
+								<span class="num">手机号码</span>
+								<input type="text" class="textbox" id="username" name="username" />
+								<i class="icon icon-yes" style="display: none;"></i>
+								<span class="des">*11位手机号码</span>
+								<div class="tip">
+									<i class="icon icon-minus"></i>
+									<span class="error">手机号不能为空</span>
+									<div class="arrow arrow-l">
+										<em>◆</em>
+										<cite>◆</cite>
+									</div>
+								</div>
+							</li>
+							<li class="item">
+								<span class="num">手机验证</span>
+								<input type="text" id="sure-code" class="textbox" placeholder="手机验证码" name="sure-code" />
+								<button id="btn-send" type="button" class="btn-send" disabled="disabled">获取验证码</button>
+								<div class="tip">
+									<i class="icon icon-minus"></i>
+									<span class="error"></span>
+									<div class="arrow arrow-l">
+										<em>◆</em>
+										<cite>◆</cite>
+									</div>
+								</div>
+							</li>
+							<li class="item">
+								<span class="num">设置密码</span>
+								<input type="password" class="textbox" name="password" id="password" />
+								<i class="icon icon-yes" style="display: none;"></i>
+								<span class="des">*6~16个字符</span>
+								<div class="tip">
+									<i class="icon icon-minus"></i>
+									<span class="error"></span>
+									<div class="arrow arrow-l">
+										<em>◆</em>
+										<cite>◆</cite>
+									</div>
+								</div>
+							</li>
+							<li class="item">
+								<span class="num">重复密码</span>
+								<input type="password" class="textbox" name="re-password" id="re-password" />
+								<i class="icon icon-yes" style="display: none;"></i>
+								<span class="des"></span>
+								<div class="tip">
+									<i class="icon icon-minus"></i>
+									<span class="error"></span>
+									<div class="arrow arrow-l">
+										<em>◆</em>
+										<cite>◆</cite>
+									</div>
+								</div>
+							</li>
+							<li class="item">
+								<span class="num">&nbsp;</span>
+								<label for="agreement" style="font-size: 14px;">
+									<input type="checkbox" name="agreement" id="agreement" checked="checked" class="checkbox" />
+									&nbsp;阅读并接受
+									<a href="" class="bluelink">《美图账号服务条款》</a>
+								</label>
+								<span class="des"></span>
+								<div class="tip">
+									<i class="icon icon-minus"></i>
+									<span class="error"></span>
+									<div class="arrow arrow-l">
+										<em>◆</em>
+										<cite>◆</cite>
+									</div>
+								</div>
+							</li>
+							<li class="item" style="padding: 0 0 0 70px;">
+								<a href="javascript:;" class="btn btn-b" id="btn-reg">注册</a>
+							</li>
+						</ul>
+						<div class="sideLogin">
+							在美图其他产品上注册过？请
+							<a href="sub_login.html" class="bluelink">直接登录</a>
+							<div class="connectArea thirdpart-icon">
+								或使用其他方式登录:
+								<br />
+								<a href="">
+									<i class="icon icon-sina"></i>
+								</a>
+								<a href="">
+									<i class="icon icon-qq"></i>
+								</a>
+								<a href="">
+									<i class="icon icon-alipay"></i>
+								</a>
+								<a href="">
+									<i class="icon icon-renren"></i>
+								</a>
+								<a href="">
+									<i class="icon icon-douban"></i>
+								</a>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div id="footer">
+			<div class="footer-content">
+				&copy;2016 Meitu, Inc. 美图公司版权所有
+				<a href="">闽B2-20040192</a>
+			</div>
+		</div>
+		
+		
+		<div class="mt-dialog-mask clover" style="display: none;">
+		</div>
+		<div class="mt-dialog panel radius" style="display: none;">
+			<div class="mt-dialog-title">
+				<h1>验证码</h1>
+			</div>
+			<div class="mt-dialog-box">
+				<input type="text" id="C_text" placeholder="请输入验证码" style="height: 30px;" />
+				<img src="" alt="" class="code" width="150px" style="display: inline-block;vertical-align: middle;margin-left: 10px;height: 36px;" />
+			</div>
+			<a href="javascript:;" class="mt-dialog-close"></a>
+			<div class="mt-dialog-footer">
+				<div class="mt-dialog-btn-group">
+					<button class="mt-dialog-btn yes">确定</button>
+				</div>
+			</div>
+		</div>
+		
+		
+	</body>
+</html>

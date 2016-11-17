@@ -1,0 +1,278 @@
+@charset "utf-8";
+
+/*主页面内容样式*/
+.MT-content{
+	width: 1200px;
+	margin: 0 auto;
+}
+/*主页面内容顶部商品广告样式*/
+.MT-promo{
+	margin-top: 15px;
+}
+.promo-list{
+	margin-left: -15px;
+}
+.promo-item{
+	float: left;
+	margin-left: 15px;
+	font-size: 0;    /*消除空白符*/
+}
+.promo-item a{
+	width: 390px;
+	height: 210px;
+	display: block;
+	overflow: hidden;
+}
+.promo-item a img{
+	width: 390px;
+	height: 210px;
+	/*transition: transform .5s;*/
+}
+
+/*四个主内容盒子的样式*/
+.MT-box{
+	margin-top: 34px;
+	overflow: hidden;
+	position: relative;
+}
+.MT-box-tle{
+	height: 68px;
+	line-height: 68px;
+}
+.MT-box-tle .more{
+	float: right;
+	color: #636363;
+	font-size: 14px;
+	height: 68px;
+	line-height: 68px;
+	transition: color .3s ease;
+}
+.MT-box-tle .more:hover{
+	color:#FF3161;
+	cursor: pointer;
+}
+
+.MT-box-tle em{
+	font-weight: 700;
+	margin-left: 5px;
+	font-family: simsun;
+}
+.MT-box-tle .title{
+	font-size: 22px;
+	color: #333;
+	font-weight: 500;
+}
+.MT-box-con{
+	background: #fff;
+}
+.MT-box-con .box-subcon{
+	height: 300px;
+	padding-left: 300px;
+	overflow: hidden;
+}
+.box-subcon .subcon-promo{
+	width: 300px;
+	float: left;
+	display: inline;
+	margin-left: -300px;
+}
+.box-subcon .subcon-promo a{
+	display: block;
+	font-size: 0;
+	overflow: hidden;
+	cursor: pointer;
+}
+.subcon-promo a img{
+	width: 300px;
+	height: 300px;
+	transition: transform .5s;
+	transform: translateZ(0);   /*不知道干啥的*/
+}
+
+.subcon-main{
+	overflow: hidden;
+}
+.subcon-main .subcon-main-list{
+	margin: -1px 0 0 -1px;
+}
+.subcon-main .SML-item{
+	width: 224px;
+	height: 299px;
+	border-top: 1px solid #f0f0f0;
+	border-left: 1px solid #f0f0f0;
+	float: left;
+}
+.SML-item .SML-link{
+	height: 299px;
+	display: block;
+	text-align: center;
+	overflow: hidden;
+}
+.SML-item .SML-link img{
+	transition: all .5s;
+	transform: translateZ(0);
+	width: 190px;
+	height: 190px;
+	display: block;
+	margin: 15px auto;
+	position: relative;
+	z-index: 11;
+}
+
+.SML-link span{
+	transition: all .5s;
+	-webkit-transition: all .5s;	
+}
+.SML-link .SML-name{
+	height: 20px;
+	line-height: 20px;
+	font-size: 14px;
+	color: #333;
+	display: block;
+	padding: 0 10px;
+	overflow: hidden;
+}
+.SML-link .SML-desc{
+	height: 18px;
+	font-size: 12px;
+	color: #999;
+	line-height: 18px;
+	display: block;
+	overflow: hidden;
+	padding: 0 10px;
+}
+.SML-item .SML-link .hover{
+	color: #fff;
+}
+
+.SML-link .SML-price{
+	color: #ff3161;
+	font-size: 14px;
+	margin-top: 6px;
+	display: block;
+	position: relative;
+	z-index: 11;
+}
+.SML-link:hover .SML-price{
+	transform: translateY(-8px) scale(1.2);
+}
+
+/*直接CSS3实现*/
+.SML-link:hover img{
+	width: 210px;
+	height: 210px;
+}
+.MT-box .MT-box-con .box-subcon-goods{
+	height: 600px;
+}
+
+
+/*美图APP样式*/
+.MT-box-eb .MT-card{
+	position: relative;
+	zoom: 1;
+}
+.MT-card .card-box{
+	width: 1120px;
+	height: 300px;
+	overflow: hidden;
+	margin: 0 40px;
+	padding: 10px 0;
+	position: relative;
+}
+.card-box .card-list{
+	transform: translateX(0px);
+	width: 3000px;
+	position: absolute;
+	left: 0px;
+	top: 10px;
+	transition: 1s;   /*改变转换的速度*/
+}
+.card-list .card-item{
+	transform: translateZ(0px);           /*绕Z轴旋转，后留*/
+	width: 210px;
+	height: 300px;
+	float: left;
+	margin-right: 17px;
+	text-align: center;
+	transition: all 0.4s ease 0s;
+	background: #fff;
+}
+.card-item .card-link{
+	display: block;
+}
+.card-link img{
+	width: 98px;
+	height: 98px;
+	display: block;
+	margin: 62px auto 32px;
+	border-image-source: initial;   /*CSS3样式*/
+    border-image-slice: initial;
+    border-image-width: initial;
+    border-image-outset: initial;
+    border-image-repeat: initial;
+    border-width: 0px;
+    border-style: initial;
+    border-color: initial;
+}
+.card-link .card-name{
+	font-size: 18px;
+	color: rgb(51,51,51);
+	line-height: 30px;
+	display: block;
+}
+.card-link .card-desc{
+	font-size: 14px;
+	color: rgb(153,153,153);
+	line-height: 24px;
+	display: block;
+}
+
+/*		CSS3的图片上浮效果
+ -webkit-   safari和chrome的兼容
+ * -moz-  	火狐的兼容
+ * -ms-   	IE的兼容
+ * -o-      欧朋的兼容
+ * */
+.card-item:hover{
+	/*兼容*/
+   -webkit-transition : all 0.5s ease 0s ;
+   -moz-transition : all 0.5s ease 0s ;
+   -o-transition : all 0.5s ease 0s ;
+   -webkit-transform : translate(-2px,-2px);
+   -moz-transform : translate(-2px,-2px);
+   -o-transform : translate(-2px,-2px);
+   -ms-transform : translate(-2px,-2px);
+   -webkit-box-shadow : 5px 5px 15px rgba(67,72,84,0.5);
+   -moz-box-shadow : 5px 5px 15px rgba(67,72,84,0.5);
+   -o-box-shadow : 5px 5px 15px rgba(67,72,84,0.5);
+   /*chrome这边就行了*/
+   transform : translate(-2px,-6px);
+   box-shadow : 2px 5px 15px rgba(67,72,84,0.5);
+}
+
+.MT-card .ficon{
+	min-width: 16px;
+	outline: 0;
+}
+.MT-card .card-prev{
+	width: 32px;
+	height: 32px;
+	line-height: 32px;
+	position: absolute;
+	top: 135px;
+	left: 8px;
+	background: url(../img/arrow/back.png) no-repeat center;
+}
+.MT-card .card-next{
+	display: block;
+	width: 32px;
+	height: 32px;
+	line-height: 32px;
+	position: absolute;
+	top: 135px;
+	right: 8px;
+	background: url(../img/arrow/enter.png) no-repeat center;
+}
+
+

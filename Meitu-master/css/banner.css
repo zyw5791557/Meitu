@@ -1,0 +1,201 @@
+@charset "utf-8";
+/*轮播图样式*/
+.MT-banner{
+	height: 480px;
+	position: relative;
+}
+.MT-banner .carousel{
+	width: 1200px;
+	margin:  0 auto;
+	height: 480px;
+	position: relative;
+	overflow: hidden;
+}
+.carousel .carousel-list{
+	width: 100%;
+	position: relative;
+	height: 480px;
+}
+.carousel-list .carousel-item{
+	width: 100%;
+	height: 480px;
+	position: absolute;
+	top: 0;
+	left:0;
+	overflow: hidden;
+	opacity: 1;
+	z-index: 1;
+	float: left;
+}
+/*默认第一张在前面*/
+.carousel-list .carousel-item.li-eq0{
+	z-index: 2;
+}
+.carousel-list .carousel-item a{
+	display: block;
+}
+
+/*轮播图数字样式*/
+.carousel-num{
+	width: 1160px;
+	padding-right: 40px;
+	position: absolute;
+	bottom: 20px;
+	z-index: 6;
+	text-align: right;
+}
+.carousel-num li{
+	margin: 0 6px;
+	display: inline-block;
+	zoom: 1;
+	text-align: center;
+}
+.carousel-num li a{
+	background: #fff;
+	opacity: .5;
+	display: block;
+	width: 14px;
+	height: 14px;
+	cursor: pointer;
+	border-radius: 50%;
+	font-size: 0;     /*这里改变可以显示数字*/
+	border: 1px solid #AFAEAE;
+}
+.carousel-num li a.xixi{
+	background: peru;
+}
+
+/*banner菜单样式*/
+.banner-nav{
+	width: 230px;
+	height: 480px;
+	position: absolute;
+	left: 50%;
+	top: 0;
+	margin-left: -600px;
+	z-index: 22;
+}
+
+/*banner菜单底层*/
+.banner-nav-back{
+	background: #000;
+	width: 230px;
+	height: 480px;
+	opacity: .6;
+}
+/*banner主菜单样式*/
+.banner-nav-list{
+	width: 100%;
+	height: 454px;
+	position: absolute;
+	top: 8px;
+	left: 0;
+	overflow: hidden;
+}
+.banner-nav-list li{
+	-webkit-transition: background .3s ease;
+	transition: background .3s ease;
+	line-height: 28px;
+	padding: 5px 15px;
+	font-size: 0;
+	clear: both;
+	zoom: 1;
+}
+.banner-list-item .title{
+	padding: 0 10px;
+	height: 28px;
+	line-height: 28px;
+}
+.banner-list-item .title a{
+	font-size: 14px;
+	color: #fff;
+}
+.banner-list-item .text{
+	line-height: 28px;
+	max-height: 56px;
+	overflow: hidden;
+}
+.banner-list-item .text a{
+	white-space: nowrap;
+	color: #cfcfcf;
+	padding: 0 9px;
+	float: left;
+	font-size: 14px;
+}
+/*hover特效*/
+.banner-list-item .text a:hover{
+	text-decoration: underline;
+}
+.banner-list-item.hover{
+	background: #F53A8A;
+}
+.banner-list-item .text a.hover{
+	color: #fff;
+}
+
+/*banner 二级菜单样式*/
+.banner-nav-all{
+	background: #fff;
+	height: 477px;
+	position: absolute;
+	border-top: 3px solid #f53a8a;
+	left: 50%;
+	top: 0;
+	margin-left: -370px;
+	z-index: 23;
+	display: none;
+	opacity: 1;
+}
+.banner-nav-all .banner-nav-switch{
+	padding: 10px 20px;
+	background: #fff;
+}
+
+.banner-nav-all .category-list{
+	width: 240px;
+	height: 455px;
+	overflow: hidden;
+	float: left;
+}
+.banner-nav-all .category-list li{
+	width: 220px;
+	height: 75px;
+	line-height: 1.3;
+	padding: 8px 20px 8px 1px;     /*修改了一下原官网的小bug，也就是一个小样式*/
+	float: left;
+}
+/*banner二级菜单hover效果*/
+.category-item:hover .category-link{
+	color:#F9398A ;
+	cursor: pointer;
+}
+/*取消原有的img hover效果，效果太多显得很累赘*/
+ /*.category-item:hover .category-img{
+	outline: 0;
+}*/
+
+.category-item .category-link{
+	height: 75px;
+	display: block;
+	color: #605c5e;
+	font-size: 14px;
+	overflow: visible;
+	position: relative;
+}
+.category-item .category-img{	
+	width: 75px;
+	height: 75px;
+	float: left;
+	display: inline;
+	border: 0;
+}
+.category-item .link-name{
+	height: 75px;
+	padding-left: 10px;
+	display: table;    /*相当于把该便签编程一个table*/
+}
+/*当然这里设置display：block加上margin-top去调整也可以*/
+.category-item .link-name span{
+	vertical-align: middle;   /*平常使用时无效的，有一种用法是在table中使用能够垂直居中*/
+	display: table-cell;    /*相当于把该便签编程table下的一个单元格td、th*/
+}

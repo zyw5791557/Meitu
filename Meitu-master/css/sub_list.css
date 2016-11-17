@@ -1,0 +1,474 @@
+@charset "utf-8";
+.MTT-wrapper{
+	width: 1200px;
+	margin: 0 auto;
+}
+.list-all{
+	height: 50px;
+	line-height: 50px;
+	position: relative;
+	z-index: 11;
+}
+.list-all .wrap{
+	width: 1200px;
+	margin: 0 auto;
+}
+.list-all .list-link{
+	line-height: 50px;
+	color: #666;
+	float: left;
+}
+.list-all .list-link:hover{
+	color:#E92076;
+}
+.list-all .list-sep{
+	height: 50px;
+	line-height: 50px;
+	overflow: hidden;
+	padding: 0 12px;
+	color: #999;
+	float: left;
+	font-size: 14px;
+}
+
+
+/*商品详情页主要部分*/
+
+.MT-container{
+	background: #fff;
+	position: relative;
+	overflow: hidden;
+}
+.G-intro{
+	padding: 20px 0;
+}
+.MT-wrap{
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.G-meta{
+	width: 440px;
+	float: right;
+	padding-top: 20px;
+}
+.G-meta .meta-title{
+	font-size: 28px;
+	font-weight: 500px;
+	color: #333;
+	line-height: 36px;
+}
+.G-meta .meta-desc{
+	font-size: 14px;
+	color: #999;
+	line-height: 30px;
+}
+.G-meta .meta-adapter{
+	color: #979798;
+	font-size: 12px;
+	clear: both;
+	line-height: 24px;
+	height: 24px;
+	margin-top: 5px;
+}
+.G-meta .meta-adapter label{
+	width: 60px;
+	color: #fff;
+	text-align: center;
+	background: #959595;
+	display: block;
+	float: left;
+	margin-right: 15px;
+}
+.G-meta .meta-adapter a{
+	color: #0992e8;
+	-webkit-transition: color .1s ease-in;
+	transition: color .1s ease-in;
+}
+.G-meta .meta-adapter a:hover{
+	color: #E92076;
+}
+.G-meta .meta-price{
+	height: 40px;
+	padding: 10px 0 12px;
+}
+.G-meta .meta-dl, .G-meta .meta-price{
+	border-bottom: 1px solid #ebebeb;
+	overflow: hidden;
+}
+.G-meta .meta-price .price{
+	float: left;
+	height: 42px;
+	line-height: 42px;
+	font-size: 16px;
+	color: #e92076;
+	margin-right: 12px;
+}
+.G-meta .meta-price i, .G-meta .meta-price span{
+	float: left;
+}
+
+.G-meta .meta-price .tit{
+	height: 42px;
+	line-height: 46px;
+	float: left;
+	font-size: 14px;
+	color: #333;
+	margin-right: 12px;
+}
+.G-meta .meta-price .num{
+	font-size: 26px;
+	vertical-align: -1px;
+	font-style: normal;
+	float: left;	
+}
+.G-tag{
+	background: #00c705;
+	height: 18px;
+	line-height: 18px;
+	font-size: 12px;
+	padding:  0 5px 0 0;
+	margin-top: 12px;
+	color: #fff;
+	float: left;
+	border-radius: 0 2px 2px 0;
+}
+.G-tag .arrow{
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 9px;
+	border-color: #fff #00c705 #fff #fff;
+	float: left;
+	margin-right: 3px;
+}
+.G-meta .meta-dl{
+	padding: 17px 0 17px 52px;
+	position: relative;
+}
+.G-meta .meta-dl, .G-meta .meta-price{
+	border-bottom: #ebebeb 1px solid;
+	overflow: hidden;
+}
+.G-meta .meta-dl .meta-dl-close-btn{
+	position: relative;
+	top: 5px;
+	right: 8px;
+	color: #999;
+	font-size: 18px;
+	display: none;
+}
+.ficon{
+	font-size: 16px;
+	font-style: normal;
+	color: #666;
+	color: rgba(255,255,255,.5);
+	min-width: 16px;
+	outline: 0;
+	-webkit-user-select: none;
+}
+.G-meta .meta-dl .meta-type-tips{
+	color: #e92076;
+	display: none;
+	font-size: 13px;
+}
+.G-meta .meta-dt-type{
+	height: 52px;
+	line-height: 52px;
+}
+.G-meta .meta-dt{
+	width: 52px;
+	float: left;
+	display: inline;
+	margin-left: -50px;
+	letter-spacing: 2px;
+	font-size: 14px;
+	color: #333;
+}
+.G-meta .meta-dd{
+	overflow: hidden;
+}
+
+.G-meta .meta-dd .active{
+	border: 1px solid #e92076;
+}
+.G-meta .meta-thumb{
+	width: 40px;
+	height: 40px;
+	float: left;
+	margin: 5px 16px 5px 0;
+	border: 1px solid #ebebeb;
+	font-size: 0;
+}
+.G-meta .meta-img{
+	width: 40px;
+	height: 40px;
+	display: block;
+}
+
+.G-meta .meta-dl .spec-arrival-notice{
+	color: #ffbc5e;
+	padding-top: 7px;
+	margin-left: 0;
+	letter-spacing: 0;
+	font-size: 12px;
+}
+.G-meta .meta-dt-num{
+	height: 26px;
+	line-height: 26px;
+}
+
+
+.G-meta .MT-number{
+	margin-top:3px;
+}
+.MT-number{
+	width: 50px;
+	height: 18px;
+	padding: 0 18px;
+}
+.MT-number .number-plus{
+	float: right;
+	margin-left:-16px;
+	background: url(../img/sub_list/plus.png) no-repeat center;
+}
+.MT-number .number-plus:hover{
+	background: url(../img/sub_list/plusClick.png) no-repeat center;
+}
+.MT-number .number-minus, .MT-number .number-plus{
+	width: 16px;
+	height: 16px;
+	display: inline;
+	font-size: 14px;
+	text-align: center;
+	cursor: pointer;
+	color: #999;
+	transition: color .2s ease;
+	-webkit-transition: color .2s ease;
+}
+.MT-number .number-minus{
+	float: left;
+	margin-right:4px;
+	background: url(../img/sub_list/minus.png) no-repeat center;
+}
+.MT-number .number-minus:hover{
+	background: url(../img/sub_list/minusClick.png) no-repeat center;
+}
+.MT-number span.number-show{
+	float: left;
+	display: block;
+}
+
+
+.G-meta .meta-extra{
+	height: 20px;
+	padding: 30px 0;
+	overflow: hidden;
+}
+.G-meta .meta-extra-item{
+	height: 20px;
+	line-height: 20px;
+	color: #666;
+	float: left;
+	margin-right: 45px;
+}
+.G-meta .meta-extra-item .sprite{
+	width: 20px;
+	height: 20px;
+	float: left;
+	margin-right: 5px;
+	background: url(../img/sub_list/sprite.png) no-repeat;
+}
+.G-meta .meta-extra-item .icon1{
+	background-position: -124px -203px;
+}
+.G-meta .meta-extra-item .icon2{
+	background-position: -146px -203px;
+}
+.G-meta .meta-extra-item .icon3{
+	background-position: -168px -203px;
+}
+.G-meta .meta-action{
+	overflow: hidden;
+}
+.G-meta .meta-action .G-button{
+	float:left;
+	margin-right: 20px;
+}
+.G-button-fill, .G-button-line{
+	border: 1px solid #e92076;
+	background: #fff;
+	color: #e92076;
+}
+.G-button{
+	width: 176px;
+	height: 48px;
+	line-height: 48px;
+	display: block;
+	text-align: center;
+	font-size: 16px;
+}
+.G-button-fill{
+	background: #e92076;
+	color: #fff;
+}
+
+
+/*左侧放大镜效果样式*/
+.G-thumb{
+	padding-left: 166px;
+}
+.G-thumb, .G-thumb .thumb-view{
+	position: relative;
+	width: 480px;
+	height: 480px;
+}
+.G-thumb .thumb-view{
+	position: relative;
+	overflow: hidden;
+	font-size: 0;
+}
+.G-thumb, .G-thumb .thumb-view{
+	position: relative;
+	width: 480px;
+	height: 480px;
+}
+
+.G-thumb .thumb-view-img{
+	width: 480px;
+	height: 480px;
+	display: block;
+}
+
+.G-thumb .zoomImg{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	opacity: 0;
+	width: 800px;
+	height: 800px;
+	border: none;
+	max-width: none;
+	max-height: none;
+	/*outline: 1px dashed red;*/
+}
+
+.G-thumb .thumb-nav{
+	width: 64px;
+	position: absolute;
+	left: 0;
+	top: 50px;
+}
+.G-thumb .thumb-nav-item{
+	width: 64px;
+	height: 64px;
+	vertical-align: top;
+	margin-bottom: 15px;
+	font-size: 0;
+	cursor: pointer;
+}
+.G-thumb .active .thumb-nav-img{
+	border: 1px solid #e92076;
+}
+.G-thumb .thumb-nav-img{
+	width: 62px;
+	height: 62px;
+	display: block;
+	border: 1px solid #ebebeb;
+}
+
+
+/*滚动吸附菜单*/
+.G-detail-nav{
+	height: 70px;
+	line-height: 70px;
+	text-align: center;
+	font-size: 0;
+}
+.G-detail-nav, .G-row-color{
+	background: #f8f8f8;
+}
+
+.G-detail-nav-fixed{
+	width: 100%;
+	height: 64px;
+	line-height: 64px;
+	position: fixed;
+	left: 0;
+	top: 0;
+	border-bottom: 1px solid;
+	z-index: 222;
+}
+.G-detail-nav .nav-wrapper{
+	width: 1200px;
+	margin: 0 auto;
+	position: relative;
+}
+.G-detail-nav .nav-info{
+	position: absolute;
+	left: 0;
+	top: 0;
+	text-align: left;
+	padding-top: 12px;
+	display: none;
+}
+.G-detail-nav .nav-info .text{
+	line-height: 22px;
+	color: #333;
+	font-size: 13px;
+}
+.G-detail-nav .nav-info .num{
+	color: #e92076;	
+}
+
+.G-detail-nav .nav-btn{
+	background: #E92076;
+	width: 150px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	color: #fff;
+	position: absolute;
+	right: 0;
+	top: 12px;
+	font-size: 16px;
+	display: none;
+}
+.G-detail-nav .nav-link{
+	color: #333;
+	font-size: 18px;
+	display: inline-block;
+	vertical-align: top;
+	padding: 0 30px;
+	line-height: 70px;
+}
+.G-detail-nav .nav-btn-oos{
+	background: #aba9a9;
+}
+.G-detail-nav .active, .G-detail-nav .nav-link:hover{
+	color: #E92076;
+}
+
+/*5张大图片*/
+.G-detail{
+	position: relative;
+	padding-bottom: 70px;
+	overflow: hidden;
+}
+.G-detail .detail-img{
+	width: 100%;
+}
+
+
+/*后留*/
+.G-config{
+	position: relative;
+	overflow: hidden;
+	padding: 50px 0 10px;
+	font-size: 16px;
+}
+
+
+.G-meta .meta-dl-highlight{
+	border: 2px solid #E92076;
+}

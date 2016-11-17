@@ -1,0 +1,321 @@
+@charset "utf-8";
+
+/*底部服务块样式*/
+.MT-service{
+	background: #fff;
+	margin-top: 60px;
+	padding-bottom: 40px;
+}
+/*固定内容区域*/
+.MT-service .service-wrapper{
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.MT-service .MT-service-list{
+	width: 1200px;
+	margin: 0 auto;
+	border-bottom: 1px solid #e5e5e5;
+}
+.MT-service-list .MT-serice-item{
+	float: left;
+	width: 25%;
+	height: 76px;
+	padding-top: 56px;
+	cursor: pointer;
+}
+.service-icon1,.service-icon2,.service-icon3,.service-icon4{
+	width: 44px;
+	height: 44px;
+	margin: 0 15px 0 60px;
+	float: left;
+	background: url(../img/sprite.png);
+}
+/*滑动门原理定位服务icon*/
+.service-icon1{
+	background-position: 0 -230px;
+}
+.service-icon2{
+	background-position: -48px -230px;
+}
+.service-icon3{
+	background-position: -96px -230px;
+}
+.service-icon4{
+	background-position: -144px -230px;
+}
+/*对服务title统一设置样式*/
+.MT-service-list .service-title{
+		font-size: 16px;
+		color: #727272;
+		line-height: 18px;
+		transition: color .2s;
+}
+/*对服务text统一设置样式*/
+.MT-service-list .service-text{
+	font-size: 12px;
+	color: #b6b6b6;
+	line-height: 24px;
+	transition: color .2s;
+}
+
+/*hover样式准备*/
+.MT-service-list .MT-serice-item:hover .eq0{
+	color: #82A9EF;
+}
+.MT-service-list .MT-serice-item:hover .eq1{
+	color: #72CCA9;
+}
+.MT-service-list .MT-serice-item:hover .eq2{
+	color: #FFA95F;
+}
+.MT-service-list .MT-serice-item:hover .eq3{
+	color: #FF4980;
+}
+
+/*重新格式化字体*/
+.MT-service,.MT-footer{
+	font-family: 'helvetica neue','hiragino sans gb',simsun,arial,sans-serif;
+}
+
+
+/*美图底部指南*/
+.MT-guide{
+	padding-top: 34px;
+}
+
+/*底部客服联系*/
+.MT-guide .MT-contact{
+	float: right;
+	width: 230px;
+}
+.MT-contact .contact-tel{
+	padding-left: 42px;
+	overflow: hidden;
+}
+.MT-contact .contact-tel i{
+	background: url(../img/sprite.png) no-repeat;
+	background-position: -152px -70px;
+	float: left;
+	width: 36px;
+	height: 36px;
+	margin: 3px 0 0 -42px;
+}
+.MT-contact .contact-tel h4{
+	line-height: 22px;
+	color: #5e5e5e;
+	font-size: 19px;
+	font-weight: 700;
+}
+.MT-contact .contact-tel p{
+	color:#b6b6b6;
+	line-height: 20px;
+	font-size: 12px;
+}
+/*客服QQ*/
+.MT-contact .contact-qq{
+	display: block;
+	width: 188px;
+	height: 60px;
+	margin-top: 26px;
+	background: url(../img/sprite.png) no-repeat;
+}
+
+
+/*底部向导菜单样式*/
+.MT-guide .MT-guide-list{
+	padding-left: 42px;
+}
+.MT-guide-list .guide-dl{
+	float: left;
+	width: 154px;
+}
+.guide-dl .guide-dt{
+	font-weight: 700;
+	color: #727272;
+	font-size: 14px;
+	padding-bottom: 8px;
+}
+.guide-dl .guide-dd{
+	height: 28px;
+	line-height: 28px;
+}
+.guide-dl .guide-dd a{
+	color: #5E5E5E;
+	font-size: 12px;
+	transition: color .2s ease-in;    
+}
+.guide-dl .guide-dd a:hover{
+	color: #E92076;
+}
+
+/*最底部样式*/
+.MT-footer{
+	padding: 20px 0;
+	background: #f8f8f8;
+}
+.MT-footer .footer-wrapper{
+	width: 1200px;
+	margin: 0 auto;
+}
+
+/*合伙人板块样式*/
+.footer-partner{
+	padding: 6px 0 13px;
+	border-bottom: 1px solid #e5e5e5;
+}
+.partner-link li{
+	float: left;
+}
+.partner-link .links-item{
+	height: 20px;
+	line-height: 20px;
+	color: #5e5e5e;
+	font-size: 12px;
+}
+.partner-link .links-item a{
+	color: #5e5e5e;
+	transition: color .2s ease-in;
+}
+/*新增的hover效果*/
+.partner-link .links-item a:hover{
+	color: #E92076;
+}
+.partner-link .sep{
+	background: #d3d3d3;
+	width: 1px;
+	height: 10px;
+	display: inline;
+	margin: 6px 7px 0;
+	
+}
+.partner-link .links-item.more{
+	margin-left: 20px;
+}
+
+/*实名认证prove*/
+.prove-logo{
+	float: right;
+	padding-top: 20px;
+	padding-bottom: 18px;
+}
+.logo-copy{
+	padding: 15px 0 0 0px;
+	zoom: 1;
+	position: relative;
+}
+.copy-img{
+	width: 124px;
+	height: 31px;
+	position: absolute;
+	top: 17px;
+	left: 0;
+	z-index: 4;
+	background: url(../img/logo-single.png) top left no-repeat;
+}
+.prove-link{
+	padding-top: 10px;
+	margin-left:144px;
+	height: 20px;
+}
+.prove-link li{
+	float: left;
+}
+.prove-link .links-item a{
+	height: 20px;
+	line-height: 20px;
+	color: #5e5e5e;
+	font-size: 12px;
+}
+/*新增的hover效果*/
+.prove-link .links-item a:hover{
+	color: #E92076;
+	transition: color .2s ease-in;
+}
+.prove-link .sep{
+	background: #d3d3d3;
+	width: 1px;
+	height: 10px;
+	margin: 6px 7px 0;
+	display: inline;
+}
+
+/*copyright*/
+.copyright-info{
+	margin-left: 144px;
+	line-height: 20px;
+	color: #b6b6b6;
+	font-size: 12px;
+}
+.copyright-info a{
+	color: #b6b6b6;
+}
+/*重新初始化样式*/
+.logo-copy{
+	height: 60px;
+}
+
+/*设置侧边固定菜单栏*/
+.MT-side-toolbar{
+	display: block;
+	opacity: .7;
+	width: 50px;
+	position: fixed;
+	right: 30px;
+	bottom: 150px;
+	z-index: 100;
+	overflow: visible;
+}
+/*侧边栏hover改变透明度*/
+.MT-side-toolbar:hover{
+	opacity: 1;
+}
+.MT-side-toolbar .box{
+	box-shadow: 0 0 3px rgba(0,0,0,.15);
+}
+.MT-side-toolbar a{
+	display: block;
+	width: 50px;
+	height: 40px;
+	background: #fff;
+	padding: 5px 0;
+	position: relative;
+}
+.MT-side-toolbar .goto-top{
+	margin-top: 5px;
+}
+.MT-side-toolbar span{
+	width: 40px;
+	height: 40px;
+	display: block;
+	margin: 0 auto;
+	background: url(../img/side.toolbar.sprite.png) top left no-repeat;
+	background-size: 80px auto;
+	cursor: pointer;
+}
+.MT-side-toolbar .qrcode-icon{
+	background-position: 0 -40px;
+}
+.MT-side-toolbar .totop-icon{
+	background-position: 0 -80px;
+}
+.slide-qrcode{
+	display: none;
+	color: #636363;
+	position: absolute;
+	top: -50px;
+	right: 52px;
+	background: #fff;
+	padding: 10px;
+	height: 135px;
+	box-shadow: 0 0 3px rgba(0,0,0,.15);
+	z-index: 100;
+}
+.slide-qrcode img{
+	width: 110px;
+	display: block;
+	border: 0;
+}
+.slide-qrcode img:hover{
+	outline: 1px dashed #E92076;
+}

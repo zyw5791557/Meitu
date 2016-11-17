@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="css/commer.css"/>
+		<link rel="stylesheet" type="text/css" href="css/cart.css"/>
+		<link rel="shortcut icon" type="text/css" href="favicon.ico"/>
+		<title>购物车_美图官网</title>
+		<script src="js/jquery-3.1.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.cookie.js" type="text/javascript" charset="utf-8"></script>
+		<script src="itemJS/cart.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body style="display: none;">
+		
+		<div class="cart-header">
+			<div class="cart-wrapper clear">
+				<div class="MT-logo">
+					<div class="logo-link" style="cursor: pointer;" onclick="location.href = 'index.html'">
+						<img src="img/cart/logo@2x.png" alt="美图官网" style="width: 213px; height: 45;" />
+					</div>
+				</div>
+				<div class="MT-heading">
+					<i class="sep"></i>
+					购物车
+				</div>
+				<ul class="MT-top-link MT-top-user clear" id="J_loginArea">
+					<li class="top-item top-menu" id="J_loginMenu">
+						<div class="J_loginedConn hide">
+							<a href="" class="top-link top-link-user">
+								<span id="J_username"></span>
+							</a>
+						</div>
+						<div class="J_loginConn clear">
+							<a href="" class="top-link top-link-login">登录</a>
+							<span class="sep"></span>
+							<a href="" class="top-link top-link-login">注册</a>
+						</div>
+					</li>
+					<li class="top-item top-item-scode">
+						<a href="" class="top-link">S码通道</a>
+					</li>
+					<li class="top-item J-top-item-cart">
+						<a href="" class="top-link top-cart">
+							<i class="cart ficon"><img src="img/cart/cart.png" alt="" width="16" height="25" style="margin-top: 10px;margin-left: -6px;" /></i>
+							<span class="text">购物车</span>
+							<em class="bub J_cartTotal">0</em>
+						</a>
+						<div class="top-dropdown-cart J-top-dropdown-cart">
+							<ul class="MT-cart-list">
+								<p class="center mt10">正在获取中...</p>
+							</ul>
+							<div class="footer">
+								<a href="" class="checkout-btn">去购物车结算</a>
+								<p>
+									共
+									<span class="count J_cartTotal">2</span>
+									件商品
+								</p>
+								<p class="bold total-price">
+									<span class="num J-total-price">0</span>
+									&nbsp;元
+								</p>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		
+		<div class="MT-crumb">
+			<div class="cart-wrapper">
+				<a href="index.html" class="crumb-link">首页</a>
+				<span class="crumb-sep">&gt;</span>
+				<span class="crum-span">购物车</span>
+			</div>
+		</div>
+		
+		<div class="MT-wrapper clear">
+			<div class="MT-box C-cart-wrap clear" id="Jcart">
+				<div class="C-cart clear">
+					<table class="C-cart-table">
+						<thead>
+							<tr class="cart-tr">
+								<th class="cart-th" width="8.3%">
+									<label class="cart-all">
+										<input type="checkbox" class="J_cartChkAll" checked="checked" />
+										全选
+									</label>
+								</th>
+								<th class="cart-th" width="52%">
+									<p class="gs">商品信息</p>
+								</th>
+								<th class="cart-th" width="10%">单价(元)</th>
+								<th class="cart-th" width="15%">数量</th>
+								<th class="cart-th" width="10%">小计(元)</th>
+								<th class="cart-th">操作</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr class="cart-tr J_cartItem" style="display: none;">
+								<td class="cart-td">
+									<label class="cart-label">
+										<input type="checkbox" class="J_cartChk" checked="checked" />
+									</label>
+								</td>
+								<td class="cart-td relative J_modify">
+									<div class="cart-info" style="z-index: 1;">
+										<a href="">
+											<img src="img/cart/pic01.jpg" class="cart-img" />
+										</a>
+										<p>
+											<a href="" class="cart-name">
+												MeituFamily潮趣手机壳
+											</a>
+										</p>
+										<div class="cart-spec">
+											<span class="cart-spec-text">
+												规格:
+												<i></i>
+											</span>
+											<span class="ficon icon-spec-edit J-spec-edit" title="修改规格"></span>
+											<div class="cart-spec-editor J-cart-spec-editor" style="display: none;top: -14px;opacity: 1;">
+												<div class="cart-spec-editor-arrow">
+													<span></span>
+												</div>
+												<dl class="cart-spec-select">
+														<dt>规格</dt>
+														<dd>
+															<a href="javascript:;" class="active">MeituFamily印花款</a>
+															<a href="javascript:;">闪兔款</a>
+															<a href="javascript:;">小笼包鸡款</a>
+															<a href="javascript:;">太空柠檬款</a>
+														</dd>
+												</dl>
+											</div>
+										</div>
+									</div>
+									<span class="spec-arrival-notice J-arrival-notice"></span>
+								</td>
+								<td class="cart-td">
+									<div class="cart-price">
+										<p>
+											<i cart-price>99.00</i>
+										</p>
+									</div>
+								</td>
+								<td class="cart-td">
+									<div class="cart-number clear">
+										<span class="number-minus ficon"></span>
+										<span class="number-show J_speciCount" data-price='99'>2</span>
+										<span class="number-plus ficon"></span>
+									</div>
+								</td>
+								<td class="cart-td cart-price-td">
+									<p class="cart-total J_countSpeciPrice">198.00</p>
+								</td>
+								<td class="cart-td">
+									<a href="javascript:;" class="cart-remove ficon"></a>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<div class="C-cart-account-placeholder">
+						<div class="C-cart-account" id="J_accountBar">
+							<div class="cart-wrap clear">
+								<div class="cart-total">
+									<p class="cart-info">
+										已选
+										<span class="num f18" id="JcartTotalNum">0</span>
+										件&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;合计:
+										<span class="price" id="JcartTotalPrice">￥<i>0.00</i></span>
+									</p>
+									<a href="javascript:;" class="cart-btn" id="btnCartCheckout">去结算</a>
+								</div>
+								<a href="" class="cart-back un">继续购物</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="cart-footer"></div>
+		
+		<div class="mt-dialog-mask clover" style="display: none;">
+		</div>
+		<div class="mt-dialog panel radius" style="display: none;">
+			<div class="mt-dialog-title">
+				<h1>提示</h1>
+			</div>
+			<div class="mt-dialog-box">已达购物车数量上限，不能再继续添加了。</div>
+			<a href="javascript:;" class="mt-dialog-close"></a>
+			<div class="mt-dialog-footer">
+				<div class="mt-dialog-btn-group">
+					<button class="mt-dialog-btn yes">确定</button>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

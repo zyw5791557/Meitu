@@ -1,0 +1,375 @@
+@charset "utf-8";
+body{
+	font-family: 'helvetica neue',  'hiragino sans gb', 'Microsoft Yahei', arial,tahoma,'simsun',sans-serif;
+	font-size: 12px;
+	color: #4d4d4d;
+	line-height: 1.5em;
+	background: #fff;
+}
+
+/*注册页头部样式*/
+#header{
+	background: url(../img/phone_login/bg_header.png) 50% 0 no-repeat;
+}
+.header{
+	min-width: 960px;
+}
+.header-content{
+	width: 960px;
+	height: 65px;
+	margin: 0 auto;
+}
+.logo{
+	float: left;
+	width: 210px;
+	background: url(../img/phone_login/logo.png) no-repeat;
+	display: inline-block;
+	margin-top: 8px;
+}
+.logo-id,.logo-meitu{
+	display: block;
+	width: 110px;
+	height: 52px;
+	float: left;
+}
+.logo-meitu{
+	width: 100px;
+}
+.topRight{
+	float: right;
+	height: 28px;
+	line-height: 28px;
+	margin-top: 20px;
+	font-size: 14px;
+	color: #fff;
+	padding-right: 3px;
+}
+.topRight span.line{
+	padding: 0 5px;
+}
+.topRight a{
+	font-size: 14px;
+	color: #fff;
+}
+
+
+/*注册页主内容样式*/
+#container{
+	width: 960px;
+	margin: 0 auto;
+	min-height: 600px;
+	overflow: hidden;
+}
+.tab{
+	width: 654px;
+	margin: 0 auto;
+	border-bottom: 2px solid #e1e1e1;
+	margin-top: 70px;
+	position: relative;
+}
+.tab .current{
+	position: absolute;
+	width: 84px;
+	height: 14px;
+	background: url(../img/phone_login/sprite.png) no-repeat;
+	background-position: 0 -90px;
+	bottom: -12px;
+	margin-right: 2px;
+	left: 0;
+	transition: 0.2s;
+	-webkit-transition: 0.2s;
+}
+.tab-li{
+	float: left;
+	height: 34px;
+	font-size: 20px;
+	font-weight: bold;
+	color: #666;
+}
+
+#mainContent{
+	width: 654px;
+	margin: 35px auto;
+}
+#reg-ul{
+	display: block;
+	width: 386px;
+	border-right: 1px solid #d7d7d7;
+	padding: 0 0 30px;
+	float: left;
+}
+.form .item{
+	margin-top: 10px;
+	display: block;
+	position: relative;
+}
+#reg-ul .num{
+	width: 58px;
+	text-align: right;
+}
+.form .num{
+	font-size: 14px;
+	display: inline-block;
+	padding-right: 8px;
+	height: 36px;
+}
+#reg-ul .textbox{
+	width: 200px;
+	height: 30px;
+	line-height: 30px;
+}
+.textbox{
+	padding: 0 5px;
+	width: 240px;
+	height: 34px;
+	line-height: 34px;
+	border-radius: 2px;
+	background: none;
+	border: 1px solid #ccc;
+	font-size: 14px;
+}
+span.des{
+	color: #888;
+	padding-left: 3px;
+	font-size: 12px;
+}
+.tip{
+	position: absolute;
+	background: #fef0e1;
+	border: 1px solid #fe9435;
+	min-width: 60px;
+	border-radius: 3px;
+	top: -40px;
+	right: 103px;
+	color: #7b755f;
+	padding: 4px 10px;
+	display: none;
+}
+.icon-minus{
+	background-position: -1px -178px;
+	width: 14px;
+	height: 14px;
+}
+.icon{
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 3px;
+}
+.btn,.current,.icon{
+	background-image: url(../img/phone_login/sprite.png);
+}
+.tip .arrow{
+	position: absolute;
+	top: 15px;
+	color: #fef0e1;
+	font-size: 14px;
+	right: 20px;
+}
+.tip .arrow em{
+	color: #fe9435;
+	top: 2px;
+}
+.tip .arrow em,.tip .arrow cite{
+	position: absolute;
+}
+#reg-ul #sure-code{
+	width: 106px;
+}
+.form .btn-send{
+	margin-left: 3px;
+}
+.btn-send[disabled]{
+	background: rgb(228,228,228);
+	color: #c7c7c7;
+	border-color: #dadada;
+}
+.btn-send{
+	padding: 6px 12px;
+	border-radius: 3px;
+	border: 1px solid #aaa;
+	color: #666;
+}
+.checkbox{
+	vertical-align: middle;
+	margin-right: 4px;
+}
+.bluelink{
+	color: #0088cc;
+	font-size: 14px;
+	font-weight: bold;
+	text-decoration: underline;
+}
+#reg-ul .btn-b{
+	width: 210px;
+	margin-top: 0;
+}
+.btn-b{
+	height: 46px;
+	width: 282px;
+	background: #fe4172;
+	display: block;
+	line-height: 46px;
+	font-size: 18px;
+	color: #fff;
+	font-weight: normal;
+	text-shadow: none;
+	border-radius: 3px;
+	text-align: center;
+}
+.sideLogin{
+	float: left;
+	width: 220px;
+	padding-left: 45px;
+	color: #787878;
+}
+.sideLogin .connectArea{
+	margin-top: 20px;
+	border-top: none;
+}
+.connectArea{
+	font-size: 14px;
+	color:#787878;
+	margin-top: 12px;
+}
+.connectArea a{
+	display: inline-block;
+	margin-right: 5px;
+}
+.thirdpart-icon .icon{
+	width: 32px;
+	height: 40px;
+	background: url(../img/phone_login/icon_thirdparty.png) no-repeat;
+	margin-top: 5px;
+}
+.thirdpart-icon .icon-sina{
+	background-position: -93px 0;
+}
+.thirdpart-icon .icon-qq{
+	background-position: -10px 0;
+}
+.thirdpart-icon .icon-alipay{
+	background-position: -52px 0;
+}
+.thirdpart-icon .icon-renren{
+	background-position: -177px 0;
+}
+.thirdpart-icon .icon-douban{
+	background-position: -135px 0;
+}
+
+
+/*底部样式*/
+#footer{
+	border-top: 1px solid #f2f2f2;
+	width: 100%;
+	color: #747357;
+}
+.footer-content{
+	width: 960px;
+	text-align: center;
+	line-height: 50px;
+	margin: 0 auto;
+}
+
+.icon-yes{
+	width: 24px;
+	height: 19px;
+	background-position: 3px -203px;
+	display: none;
+}
+
+
+
+/*注册hover样式*/
+#btn-reg:hover{
+	opacity: .8;
+}
+
+
+
+
+/*弹出框*/
+.mt-dialog-mask{
+	z-index: 9999;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #000;
+	opacity: 0.5;
+	display: block;
+}
+.mt-dialog.radius{
+	border-radius: 3px;
+}
+.mt-dialog{
+	width: 380px;
+	z-index: 10004;
+	left: 50%;
+	font-size: 14px;
+	top: 50%;
+	margin-top: -90px;
+	margin-left: -190px; 	
+	box-shadow: 0 0 15px rgba(0,0,0,.2);
+	background: #fff;
+	position: fixed;
+}
+.mt-dialog-title{
+	height: 44px;
+	text-align: left;
+	line-height: 46px;
+	padding: 0 15px;
+	font-size: 16px;
+	border-bottom: 1px solid #ddd;
+}
+.mt-dialog-title h1{
+	margin: 0;
+	font-size: inherit;
+	font-weight: 400;
+}
+
+.mt-dialog-close{
+	position: absolute;
+	display: block;
+	display: block;
+	width: 16px;
+	height: 16px;
+	top: 12px;
+	right: 15px;
+	background: url(../img/cart/close.png) no-repeat center;
+}
+.mt-dialog-close:hover{
+	background: url(../img/cart/closeClick.png) no-repeat center;
+}
+.mt-dialog-box{
+	font-size: 14px;
+	padding: 30px 15px 30px 25px;
+	overflow: auto;
+	color: #555;
+}
+.mt-dialog-footer{
+	text-align: center;
+	padding: 20px;
+}
+.mt-dialog-btn-group .yes{
+	background: #E92076;
+	border-color: #E92076;
+}
+.yes{
+	color: #fff;
+}
+.mt-dialog-btn{
+	cursor: pointer;
+	padding: 6px 24px;
+	outline: 0;
+	border: 1px solid #ddd;
+	border-radius: 3px;
+}
+
+
+
+
+
+
+

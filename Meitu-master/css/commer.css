@@ -1,0 +1,55 @@
+@charset "utf-8";
+body{
+	background: #f8f8f8;
+	min-width: 1200px;
+	color: #333;
+}
+input,body{
+	font: 400 12px/1.5 "Helvetica Neue",Helvetica,Arial,"Microsoft YaHei","Hiragino Sans GB",sans-serif;
+}
+input{
+	outline: 0;
+}
+body,ul,p,dl,dd,dt{
+	margin: 0;
+	padding: 0;
+}
+h1,h2,h3,h4,h5,h6{
+	padding: 0;
+	margin: 0;
+	font-weight: 400;
+	font-size: 100%;
+}
+ul{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+	font: 400 12px/1.5 "Helvetica Neue",Helvetica,Arial,"Microsoft YaHei","Hiragino Sans GB",sans-serif;
+}
+
+.clear:after{
+	clear: both;
+	content: '';
+	display: block;
+}
+.clear{
+	zoom: 1;
+}
+img{
+	display: block;
+	border: 0;
+}
+em,strong,i,cite{
+	font-style: normal;
+}
+.hide{
+	display: none;
+}
+
+.ficon{
+	font-size: 16px;
+	color: rgba(255,255,255,.5);
+	min-width: 16px;
+	outline: 0;
+}

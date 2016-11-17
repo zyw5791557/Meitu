@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="css/commer.css"/>
+		<link rel="stylesheet" type="text/css" href="css/sub_login.css"/>
+		<link rel="shortcut icon" href="favicon.ico"/>
+		<title>美图账号登陆_美图官网</title>
+		<script src="js/jquery-1.11.3.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.cookie.js" type="text/javascript" charset="utf-8"></script>
+		<script src="itemJS/sub_login.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div id="header">
+			<div class="header-content">
+				<h1>
+					<a href="index.html" class="logo" title="Meitu官方商城"></a>
+				</h1>
+			</div>
+		</div>
+		<div id="container" class="border">
+			<div class="login clear">
+				<div class="login-l">
+					<img src="img/sub_login/pic_login.jpg" />
+				</div>
+				<div class="login-r" id="loginArea">
+					<form class="login-form">
+						<table class="loginTable" id="login">
+							<tbody>
+								<tr>
+									<td class="item">
+										<label for="username" class="label">美图账号登录</label>
+										<div class="login-inner mt10">
+											<input type="text" class="textbox" id="username" placeholder="邮箱/手机号码" />
+											<div class="tip">
+												<i class="icon icon-minus"></i>
+												<span class="error">账号不能为空</span>
+												<div class="arrow arrow-l">
+													<em>◆</em>
+													<cite>◆</cite>
+												</div>
+											</div>
+										</div>
+									</td>
+								</tr>
+								
+								<tr>
+									<td class="item">
+										<div class="login-inner mt10">
+											<input type="password" class="textbox" id="password" placeholder="密码" />
+											<div class="tip">
+												<i class="icon icon-minus"></i>
+												<span class="error">密码不能为空</span>
+												<div class="arrow arrow-l">
+													<em>◆</em>
+													<cite>◆</cite>
+												</div>
+											</div>
+										</div>
+									</td>
+								</tr>
+								
+								<tr id="sure-code" class="hide">
+									<td class="item">
+										<div class="login-inner mt10">
+											<input type="text" placeholder="验证码" class="textbox" id="surecode" />
+											<img src="" alt="" id="surecode-img" />
+											<a id="tchange" href="javascript:void(0);">&nbsp;&nbsp;刷新</a>
+											<div class="tip">
+												<i class="icon icon-minus"></i>
+												<span class="error"></span>
+												<div class="arrow arrow-l">
+													<em>◆</em>
+													<cite>◆</cite>
+												</div>
+											</div>
+										</div>
+									</td>
+								</tr>
+								
+								<tr>
+									<td>
+										<div class="clear mt10">
+											<a class="pink fr" href="">忘记密码？</a>
+											<label for="remember_me">
+												<input type="checkbox" id="remember_me" class="checkbox" />
+												两周内自动登录
+											</label>
+										</div>
+									</td>
+								</tr>
+								
+								<tr>
+									<td class="item-td">
+										<a class="btn btn-b" id="btn-login" href="javascript:;">登录</a>
+									</td>
+								</tr>
+								
+							</tbody>
+						</table>
+						<div class="contentArea thirdpart-icon">
+							或使用其他方式登录:
+							<p class="center">
+								<a href="">
+									<i class="icon icon-sina"></i>
+								</a>
+								<a href="">
+									<i class="icon icon-qq"></i>
+								</a>
+								<a href="">
+									<i class="icon icon-renren"></i>
+								</a>
+							</p>
+						</div>
+					</form>
+					<div class="guide-reg">
+						还没有美图账号？
+						<a class="pink" href="phone_login.html" target="_blank">立即注册</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
